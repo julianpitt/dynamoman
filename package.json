@@ -1,0 +1,43 @@
+{
+  "name": "dynamoman",
+  "version": "0.1.0",
+  "description": "A dynamodb cli management tool",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "dynamoman": "index.js"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint .",
+    "test:all": "npm run test && npm run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.130.0",
+    "bluebird": "^3.5.1",
+    "commander": "^2.11.0",
+    "csv-parse": "^1.2.4",
+    "dynamodb-data-types": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.0",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-node": "^2.1.3",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 50,
+        "branches": 60,
+        "functions": 40,
+        "lines": 50
+      }
+    }
+  }
+}

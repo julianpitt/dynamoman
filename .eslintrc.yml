@@ -1,0 +1,16 @@
+extends:
+  - eslint:recommended
+  - plugin:node/recommended
+plugins:
+  - node
+  - promise
+
+env:
+  mocha: true
+  node: true
+  jest: true
+
+rules:
+  no-console: 0
+  strict: 1
+  node/no-unsupported-features: [ 2, { "version": 6 }]
