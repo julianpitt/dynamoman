@@ -37,4 +37,4 @@ Usage:  [options] [command]
 dynamoman seed my-pretend-table -c data/my-pretend-table-data-export.csv
 
 #### With a profile and csv file
-dynamoman seed my-pretend-table -c data/my-pretend-table-data-export.csv -p acloudguru-julianp
+dynamoman seed my-pretend-table -c data/my-pretend-table-data-export.csv -p my-local-aws-profile
